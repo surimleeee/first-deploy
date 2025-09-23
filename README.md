@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 First, run the development server:
-
+## 개발 환경
 ```bash
 npm run dev
 # or
@@ -12,6 +12,10 @@ yarn dev
 pnpm dev
 # or
 bun dev
+$ node -v
+v22.19.0
+$ npm -v
+10.9.3
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
