@@ -14,14 +14,14 @@ export default function Home() {
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
-            LG CNS AM CAMP 3기 이수림 입니다.{" "}
+            안녕하세요.{" "}
             {/* <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
               app/page.tsx
             </code>
             . */}
           </li>
           <li className="tracking-[-.01em]">
-            테스트할 수 없는 건 만들 수 없다.
+            LG CNS AM CAMP 3기 이수림 입니다.
           </li>
         </ol>
 
