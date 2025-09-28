@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 
 async function getResumeInfo() {
   const res = await fetch('https://raw.githubusercontent.com/surimleeee/first-deploy/refs/heads/main/service/resume_general_info_service.json');
@@ -25,7 +25,7 @@ export default async function Home() {
           priority
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
+          <li className="tracking-[-.01em]">
             안녕하세요.{" "} 
             {/* <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
               app/page.tsx
@@ -35,7 +35,24 @@ export default async function Home() {
           <li className="tracking-[-.01em]">
             {data.name}입니다.
           </li>
+          <li className="tracking-[-.01em]">
+            진행했던 미니프로젝트를 보려면 아래 "mini project"를 클릭하세요.
+          </li>
         </ol>
+        <ul>
+          <li style={{ fontWeight: "bold", fontSize: "20px", display: "flex", alignItems: "center"}}>
+            
+            <img src="/dasiolmap.png.jpg"
+                 style={{width: "300px", height: "170px", marginRight: "10px", marginTop: "80px"}}/>
+            미니 프로젝트 : '다시올지도'
+            
+          </li>
+          <li style={{fontSize: "15px"}}>
+            <br/>사용자의 리뷰와 별점 데이터를 기반으로 신뢰할 수 있는 맛집 정보를 제공하고, <br/>
+            더 나아가 AI 맞춤형 추천 시스템을 통해서 ‘오늘 뭐 먹지?’라는 질문에 만족스럽고 빠른 솔루션을 제공하려고 합니다.<br/>
+             이는 단순한 맛집 정보 제공을 넘어, 현대인의 가장 소중한 자원인 ‘시간’을 절약 해 주고, 사용자의  소중한 일상을 제공 해 줄 것 입니다.
+          </li>
+        </ul>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
@@ -55,11 +72,11 @@ export default async function Home() {
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/LG-CNS-MiniProject1-Team4"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            mini project
           </a>
         </div>
       </main>
